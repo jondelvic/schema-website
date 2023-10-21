@@ -1,3 +1,119 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url('/assets/fonts/century_gothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url('/assets/fonts/gothici-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url('/assets/fonts/gothicb-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url('/assets/fonts/gothicbi-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('/assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: condensed;
+    src: local('Myriad Pro Condensed'), url('/assets/fonts/MYRIADPRO-COND.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: condensed;
+    src: local('Myriad Pro Condensed Italic'), url('/assets/fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local('Myriad Pro Light'), url('/assets/fonts/MyriadPro-Light.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local('Myriad Pro Semibold'), url('/assets/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: italic;
+    font-weight: 600;
+    src: local('Myriad Pro Semibold Italic'), url('/assets/fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: condensed;
+    src: local('Myriad Pro Bold Condensed'), url('/assets/fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Myriad Pro Bold'), url('/assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: italic;
+    font-weight: bold;
+    src: local('Myriad Pro Bold Italic'), url('/assets/fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: condensed;
+    src: local('Myriad Pro Bold Condensed Italic'), url('/assets/fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +121,6 @@
 
 body {
     height: 3000px;
-}
-
-.banner-img-container {
-    position: absolute;
-    z-index: 1;
-}
-
-.banner-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 nav {
@@ -35,7 +139,6 @@ nav {
 
 .nav-bar {
     display: flex;
-    font-weight: 530;
 }
 
 .nav-links-container {
@@ -50,6 +153,70 @@ a.nav-links {
 .logo-img {
     width: 186px;
     height: 50px;
+}
+
+.banner-img-container {
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-headline-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24.5rem;
+    margin-left: -40rem;
+    flex-direction: column;
+}
+
+.date-and-author-container {
+    font-family: "Myriad Pro", sans-serif;
+    font-stretch: condensed;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: -6.5rem;
+    font-size: 1.05rem;
+}
+
+.banner-hr {
+    width: 50rem;
+    margin-left: 30.6rem;
+    margin-top: 0.5em;
+    height: 1.5px;
+    background-color: white;
+}
+
+.headline {
+    margin-left: 33.5rem;
+    margin-top: 0.5em;
+    font-size: 3rem;
+    width: 850px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: condensed;
+    line-height: 90%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+}
+
+.article-preview {
+    margin-top: 0.8rem;
+    width: 850px;
+    margin-left: 33.5rem;
+    text-align: justify;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.50);
+    font-family: "Century Gothic";
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 860px) {
