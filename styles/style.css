@@ -124,17 +124,23 @@ body {
 }
 
 nav {
+    z-index: 999;
     display: flex;
     height: 67px;
     width: 100%;
     font-family: "Century Gothic", sans-serif;
-    z-index: 999;
+    position: absolute;
     position: fixed;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
     padding-top: 0.65rem;
+}
 
+center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bar {
@@ -148,6 +154,8 @@ nav {
 a.nav-links {
     text-decoration: none;
     color: white;
+    font-weight: 400;
+    font-size: 0.9em;
 }
 
 .logo-img {
@@ -156,7 +164,7 @@ a.nav-links {
 }
 
 .banner-img-container {
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
@@ -168,7 +176,7 @@ a.nav-links {
 }
 
 .banner-headline-content {
-    position: relative;
+    position: absolute;
     z-index: 2;
     color: white;
     font-family: "Myriad Pro", sans-serif;
@@ -176,7 +184,7 @@ a.nav-links {
     justify-content: center;
     align-items: center;
     top: 24.5rem;
-    margin-left: -40rem;
+    margin-left: -15rem;
     flex-direction: column;
 }
 
@@ -196,7 +204,7 @@ a.nav-links {
     background-color: white;
 }
 
-.headline {
+.headline-container {
     margin-left: 33.5rem;
     margin-top: 0.5em;
     font-size: 3rem;
@@ -208,6 +216,18 @@ a.nav-links {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
 }
 
+a.headline {
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+a.headline:hover {
+    opacity: 0.85;
+}
+
+
+
 .article-preview {
     margin-top: 0.8rem;
     width: 850px;
@@ -217,6 +237,27 @@ a.nav-links {
     font-family: "Century Gothic";
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+.news-hightlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.news-hightlights-main {
+    background-color: black;
+}
+
+.news-highlights-sub {
+    background-color: yellow;
+}
+
+.section-hr {
+    width: 60rem;
+    margin-left: 17rem;
+    margin-top: 45px;
+    height: 1.5px;
+    background-color: black;
 }
 
 @media (max-width: 860px) {
