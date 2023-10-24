@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+nav {
+    display: flex;
+    height: 67px;
+    width: 100%;
+    font-family: "Century Gothic", sans-serif;
+    z-index: 999;
+    position: absolute;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 0.65rem;
+    background-color: black;
+}
+center{
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-links-container {
+    margin-right: 1.5rem;
+}
+
+a.nav-links {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    width: 186px;
+    height: 50px;
+}
