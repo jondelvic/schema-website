@@ -239,15 +239,21 @@ a.headline:hover {
 
 .news-hightlights {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 80% 20%;
+    width: 70%;
 }
 
 .news-hightlights-main {
+    margin-top: 2rem;
     background-color: black;
+    width: fit-content;
+    height: 40px;
 }
 
 .news-highlights-sub {
+    margin-top: 2rem;    
     background-color: yellow;
+    height: 40px;
 }
 
 .section-hr {
@@ -262,10 +268,11 @@ a.headline:hover {
     font-family: "Myriad Pro", sans-serif;
     font-weight: 500;
     font-style: italic;
-    font-size: 1.5em;
-    width: 110px;
     margin-left: 17rem;
     margin-top: -1px;
+    width: 3.5rem;
+    padding: 5px 15px;
+    font-size: 1em;
     background-color: black;
     color: yellow;
 }
@@ -277,3 +284,91 @@ a.headline:hover {
     }
 
 }
+
+@media (max-width: 1366px) {
+    .banner-headline-content {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-family: "Myriad Pro", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20rem;
+        margin-left: -18rem;
+        flex-direction: column;
+    }
+
+    .date-and-author-container {
+        font-family: "Myriad Pro", sans-serif;
+        font-stretch: condensed;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: -7rem;
+        font-size: 1.05rem;
+    }
+
+    .section-hr {
+        width: 60rem;
+        margin-left: 14rem;
+        margin-top: 45px;
+        height: 5px;
+        background-color: black;
+    }
+
+    .flag-divider {
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        width: 3.5rem;
+        padding: 5px 15px;
+        font-size: 1em;
+        margin-left: 14.05rem;
+        margin-top: -1px;
+        background-color: black;
+        color: yellow;
+    }
+}
+
+@media (min-width: 1920px) {
+    .banner-headline-content {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-family: "Myriad Pro", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 35rem;
+        margin-left: -6rem;
+        flex-direction: column;
+    }
+
+    .date-and-author-container {
+        font-family: "Myriad Pro", sans-serif;
+        font-stretch: condensed;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 2rem;
+        font-size: 1.05rem;
+    }
+
+    .section-hr {
+        width: 60rem;
+        margin-left: 27.009rem;
+        margin-top: 45px;
+        height: 5px;
+        background-color: black;
+    }
+
+    .flag-divider {
+        font-family: "Myriad Pro", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 1.5em;
+        width: 110px;
+        margin-left: 27.05rem;
+        margin-top: -1px;
+        background-color: black;
+        color: yellow;
+    }
+}
+
