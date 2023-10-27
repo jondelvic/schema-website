@@ -32,15 +32,15 @@
 }
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: normal;
-    src: local('Myriad Pro Regular'), url('/assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    src: local('Myriad Pro Regular'), url('../MYRIADPRO-REGULAR.woff') format('woff');
 }
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: normal;
     font-stretch: condensed;
@@ -49,7 +49,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: italic;
     font-weight: normal;
     font-stretch: condensed;
@@ -58,7 +58,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: 300;
     src: local('Myriad Pro Light'), url('/assets/fonts/MyriadPro-Light.woff') format('woff');
@@ -66,7 +66,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: 600;
     src: local('Myriad Pro Semibold'), url('/assets/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
@@ -74,7 +74,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: italic;
     font-weight: 600;
     src: local('Myriad Pro Semibold Italic'), url('/assets/fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
@@ -82,7 +82,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: bold;
     font-stretch: condensed;
@@ -91,7 +91,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: bold;
     src: local('Myriad Pro Bold'), url('/assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
@@ -99,7 +99,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: italic;
     font-weight: bold;
     src: local('Myriad Pro Bold Italic'), url('/assets/fonts/MYRIADPRO-BOLDIT.woff') format('woff');
@@ -107,7 +107,7 @@
     
 
 @font-face {
-    font-family: "Myriad Pro";
+    font-family: 'Myriad Pro';
     font-style: italic;
     font-weight: bold;
     font-stretch: condensed;
@@ -179,7 +179,7 @@ a.nav-links {
     position: absolute;
     z-index: 2;
     color: white;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,6 +275,45 @@ a.headline:hover {
     font-size: 1em;
     background-color: black;
     color: yellow;
+}
+
+.card-container {
+    display: grid; 
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2.5rem;
+    font-family: 'Century Gothic';
+}
+
+.card {
+    width: 350px;
+    height: 425px;
+}
+
+.card-img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-headline {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-top: 8px;
+    padding-left: 1.2rem;
+}
+
+.card-by-line {
+    font-size: 0.75em;
+    padding-top: 8px;
+    padding-left: 1.2rem;
+}
+
+.card-article-preview {
+    font-size: 1em;
+    padding-top: 10px;
+    padding-left: 1.2rem;
+    width: 325px;
 }
 
 @media (max-width: 860px) {
