@@ -183,8 +183,8 @@ a.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 24.5rem;
-    margin-left: -15rem;
+    top: 26rem;
+    margin-left: -11rem;
     flex-direction: column;
 }
 
@@ -285,7 +285,7 @@ a.headline:hover {
 
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1366px) {
     .banner-headline-content {
         position: absolute;
         z-index: 2;
@@ -294,7 +294,7 @@ a.headline:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 20rem;
+        top: 22rem;
         margin-left: -18rem;
         flex-direction: column;
     }
