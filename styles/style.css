@@ -183,8 +183,8 @@ a.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 26rem;
-    margin-left: -11rem;
+    top: 25rem;
+    margin-left: -15rem;
     flex-direction: column;
 }
 
@@ -279,10 +279,10 @@ a.headline:hover {
 
 .card-container {
     display: grid; 
-    width: 60%;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
     font-family: 'Century Gothic';
+    gap: 20px;
 }
 
 .card {
@@ -324,7 +324,7 @@ a.headline:hover {
 
 }
 
-@media (min-width: 1366px) {
+@media (max-width: 1366px) {
     .banner-headline-content {
         position: absolute;
         z-index: 2;
