@@ -224,12 +224,19 @@ a.headline:hover {
     object-fit: cover;
 }
 
+.main-feature-overlay {
+    position: absolute;
+    margin-top: -10rem;
+    padding-left: 15rem;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 .main-feature-headline {
     font-family: 'Myriad Pro', sans-serif;
     font-weight: bold;
     font-size: 2em;
     margin-top: 1.5rem;
-    margin-left: 13.5rem;
     width: 1050px;
 }
 
@@ -237,7 +244,14 @@ a.headline:hover {
     font-family: 'Century Gothic', sans-serif;
     margin-top: 10px;
     width: 1050px;
-    margin-left: 15rem;
+}
+
+footer {
+    background-color: #373737;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 @media (max-width: 860px) {
