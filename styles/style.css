@@ -27,6 +27,10 @@ nav {
     justify-content: center;
 }
 
+.block {
+    display: block;
+}
+
 .nav-bar {
     display: flex;
 }
@@ -166,7 +170,7 @@ a.headline:hover {
 }
 
 .card-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
     margin-bottom: -2.5rem;
@@ -203,6 +207,37 @@ a.headline:hover {
     padding-top: 10px;
     padding-left: 1.2rem;
     width: 300px;
+}
+
+.features-highlights {
+    padding-top: 40px;
+}
+
+.main-feature-img-container {
+    width: 68rem;
+    height: 300px;
+}
+
+.main-feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-feature-headline {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1.5rem;
+    margin-left: 13.5rem;
+    width: 1050px;
+}
+
+.main-feature-article-preview {
+    font-family: 'Century Gothic', sans-serif;
+    margin-top: 10px;
+    width: 1050px;
+    margin-left: 15rem;
 }
 
 @media (max-width: 860px) {
