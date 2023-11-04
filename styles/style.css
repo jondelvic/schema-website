@@ -267,7 +267,7 @@ a.headline:hover {
     font-size: 0.8em;
     padding-top: 10px;
     padding-left: 0.5rem;
-    width: 300px;
+    width: 320px;
 }
 
 .opinion-highlights-container {
@@ -360,6 +360,7 @@ footer {
 }
 
 .main-logo-container {
+    margin-top: 4rem;
     padding: 5rem;
 }
 
