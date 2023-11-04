@@ -145,8 +145,8 @@ a.nav-links:hover {
 
 .date-and-author-container {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: -6.5rem;
-    font-size: 1.05rem;
+    margin-left: 1rem;
+    font-size: 1.15em;
 }
 
 .banner-hr {
@@ -658,8 +658,8 @@ footer {
         font-family: "Myriad Pro", sans-serif;
         font-stretch: condensed;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: -6.5rem;
-        font-size: 1.05rem;
+        margin-left: 1rem;
+        font-size: 1.15rem;
     }
 
     .section-hr {
@@ -667,7 +667,7 @@ footer {
         margin-left: 8rem;
         margin-top: 45px;
         height: 5px;
-        background-color: black;
+        background-color: #1E1E1E;
     }
 
     .flag-divider {
@@ -680,15 +680,29 @@ footer {
         font-weight: 700;
         font-style: italic;
         padding: 5px 15px;
-        margin-left: 8.04rem;
+        margin-left: 8.05rem;
         margin-top: -1px;
-        background-color: black;
+        background-color: #1E1E1E;
+        color: yellow;
+    }
+    
+    .flag-divider-article-page {
+        font-family: 'Myriad Pro', sans-serif;
+        font-stretch: condensed;
+        font-weight: 700;
+        font-style: italic;
+        margin-left: 8.05rem;
+        margin-top: -1px;
+        width: 10rem;
+        padding: 5px 15px;
+        font-size: 1.8em;
+        background-color: #1E1E1E;
         color: yellow;
     }
 
     .main-feature-overlay {
         position: absolute;
-        margin-top: -10rem;
+        margin-top: -12rem;
         padding-left: 10rem;
         color: white;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -736,5 +750,6 @@ footer {
         background-color: black;
         color: yellow;
     }
+
 }
 
