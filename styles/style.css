@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    src: url('../assets/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    src: url('../assets/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-cond-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    src: url('../assets/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    src: url('../assets/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 700;
+    src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +59,10 @@ nav {
 
 .block {
     display: block;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .nav-bar {
@@ -77,10 +111,8 @@ a.nav-links {
 }
 
 .date-and-author-container {
-    font-family: "Myriad Pro", sans-serif;
-    font-stretch: condensed;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: -3rem;
+    margin-left: -6.5rem;
     font-size: 1.05rem;
 }
 
@@ -145,7 +177,7 @@ a.headline:hover {
 }
 
 .section-hr {
-    width: 70rem;
+    width: 69rem;
     margin-left: 13rem;
     margin-top: 45px;
     height: 5px;
@@ -153,27 +185,29 @@ a.headline:hover {
 }
 
 .flag-divider {
-    font-family: "Myriad Pro", sans-serif;
-    font-weight: 500;
+    font-family: 'Myriad Pro', sans-serif;
+    font-stretch: condensed;
+    font-weight: 700;
     font-style: italic;
+    font-size: 5em;
     margin-left: 13rem;
     margin-top: -1px;
-    width: 3.5rem;
+    width: 5.5rem;
     padding: 5px 15px;
-    font-size: 1em;
+    font-size: 1.8em;
     background-color: black;
     color: yellow;
 }
 
 #long-text-flag {
-    width: 5rem;
+    width: 6.5rem;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
-    margin-bottom: -2.5rem;
+    margin-bottom: -5rem;
     font-family: 'Century Gothic';
     gap: 20px;
 }
@@ -190,23 +224,52 @@ a.headline:hover {
 }
 
 .card-headline {
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.8em;
     padding-top: 8px;
     padding-left: 1.2rem;
 }
 
 .card-by-line {
-    font-size: 0.75em;
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: italic;
+    font-size: 1em;
     padding-top: 8px;
     padding-left: 1.2rem;
 }
 
 .card-article-preview {
+    font-family: 'Century Gothic', sans-serif;
     font-size: 0.8em;
     padding-top: 10px;
     padding-left: 1.2rem;
     width: 300px;
+}
+
+.opinion-highlights-container {
+    margin-top: 2rem;
+}
+
+.opinion-highlights-flex {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 4.8rem;
+}
+
+.opinion-img-container {
+    width: 350px;
+    height: 200px;
+}
+
+.opinion-highlights-content {
+    width: 800px;
+}
+
+.opinion-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .features-highlights {
@@ -254,6 +317,154 @@ footer {
     padding-bottom: 15px;
 }
 
+.main-logo-container {
+    padding: 5rem;
+}
+
+/* About Us CSS */
+
+.second-nav {
+    z-index: 999;
+    display: flex;
+    height: 67px;
+    width: 100%;
+    font-family: "Century Gothic", sans-serif;
+    position: absolute;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 0.65rem;
+    padding-bottom: 0.45rem;
+    background-color: #1E1E1E;
+    flex-shrink: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 390px 390px;
+    justify-content: center;
+    row-gap:13px;
+}
+
+.staff-headline{
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+}
+
+.grid-item-a{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform:uppercase;
+    color: #000;
+}
+
+.grid-item-b{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    color: #000;
+}
+
+.grp{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+    height: 19px;
+    flex-shrink: 0;
+}
+
+.copyright{
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.bottom-heading{
+    color:#000;
+    font-family:"Myriad Pro", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height:normal;
+    text-transform: uppercase;
+    padding-top: 0.50rem;
+}
+
+.grid-container-b{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem;
+}
+
+.grid-item-c{
+    border-right:1px solid black;
+    padding-right: 2rem;
+}
+
+.grid-item-d{
+    border-right:1px solid black;
+    padding-right: 2rem;
+}
+
+.bottom-text{
+    color: #000;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight:400;
+    line-height: 150%;
+}
+
+.bottom-img{
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+.icons-container{
+    padding-top: .70rem;
+}
+
+#bottom-pictures{
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icons{
+    padding-left: .60rem;
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
 @media (max-width: 860px) {
 
     .nav-bar {
@@ -280,7 +491,7 @@ footer {
         font-family: "Myriad Pro", sans-serif;
         font-stretch: condensed;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: -3rem;
+        margin-left: -6.5rem;
         font-size: 1.05rem;
     }
 
@@ -294,7 +505,7 @@ footer {
 
     .flag-divider {
         font-family: "Myriad Pro", sans-serif;
-        font-weight: 500;
+        font-weight: 700;
         font-style: italic;
         width: 3.5rem;
         padding: 5px 15px;
@@ -303,6 +514,14 @@ footer {
         margin-top: -1px;
         background-color: black;
         color: yellow;
+    }
+
+    .main-feature-overlay {
+        position: absolute;
+        margin-top: -10rem;
+        padding-left: 10rem;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
