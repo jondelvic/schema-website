@@ -38,6 +38,10 @@ html {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .primary-header {
     position: fixed;
     top: 0;
@@ -78,14 +82,18 @@ html {
 
 .nav-links-container {
     margin-right: 1.5rem;
-    transition: ;
 }
 
 a.nav-links {
-    text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 0.9em;
+    transition: 0.5s;
+}
+
+a.nav-links:hover {
+    color: yellow;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-img {
@@ -151,7 +159,7 @@ a.headline {
 }
 
 a.headline:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .article-preview {
@@ -232,10 +240,17 @@ a.headline:hover {
 
 .card-headline {
     font-family: 'Myriad Pro', sans-serif;
+    color: black;
     font-weight: bold;
     font-size: 1.8em;
     padding-top: 8px;
     padding-left: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-headline:hover {
+    text-shadow: 1px 1px 1px rgba(255, 255, 0, 0.50);
 }
 
 .card-by-line {
@@ -304,16 +319,23 @@ a.headline:hover {
 
 .main-feature-headline {
     font-family: 'Myriad Pro', sans-serif;
+    color: white;
     font-weight: bold;
     font-size: 2em;
     margin-top: 1.5rem;
     width: 1050px;
+    transition: 0.3s;
+}
+
+.main-feature-headline:hover {
+    opacity: 0.8;
 }
 
 .main-feature-article-preview {
     font-family: 'Century Gothic', sans-serif;
     margin-top: 10px;
     width: 1050px;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.8);
 }
 
 footer {
