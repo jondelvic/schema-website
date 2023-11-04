@@ -222,6 +222,7 @@ a.headline:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
+    padding-bottom: 1.5rem;
     margin-bottom: -5rem;
     font-family: 'Century Gothic';
     gap: 20px;
@@ -242,9 +243,9 @@ a.headline:hover {
     font-family: 'Myriad Pro', sans-serif;
     color: black;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.7em;
     padding-top: 8px;
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -258,14 +259,14 @@ a.headline:hover {
     font-style: italic;
     font-size: 1em;
     padding-top: 8px;
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
 }
 
 .card-article-preview {
     font-family: 'Century Gothic', sans-serif;
     font-size: 0.8em;
     padding-top: 10px;
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
     width: 300px;
 }
 
@@ -276,16 +277,17 @@ a.headline:hover {
 .opinion-highlights-flex {
     display: flex;
     margin-bottom: 20px;
-    margin-left: 4.8rem;
+    margin-left: 1rem;
 }
 
 .opinion-img-container {
     width: 350px;
     height: 200px;
+    margin-right: 1rem;
 }
 
 .opinion-highlights-content {
-    width: 800px;
+    width: 650px;
 }
 
 .opinion-img {
@@ -301,6 +303,11 @@ a.headline:hover {
 .main-feature-img-container {
     width: 68rem;
     height: 300px;
+    transition: 0.25s;
+}
+
+.main-feature-img-container:hover {
+    filter: blur(2px);
 }
 
 .main-feature-img {
@@ -311,7 +318,7 @@ a.headline:hover {
 
 .main-feature-overlay {
     position: absolute;
-    margin-top: -10rem;
+    margin-top: -11rem;
     padding-left: 15rem;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -331,11 +338,17 @@ a.headline:hover {
     opacity: 0.8;
 }
 
+.main-feature-by-line {
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    padding-top: 8px;
+}
+
 .main-feature-article-preview {
     font-family: 'Century Gothic', sans-serif;
     margin-top: 10px;
     width: 1050px;
-    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.8);
 }
 
 footer {
