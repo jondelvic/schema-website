@@ -40,6 +40,7 @@ html {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .primary-header {
@@ -66,6 +67,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex {
+    display: flex;
 }
 
 .block {
@@ -103,13 +108,14 @@ a.nav-links:hover {
 
 .banner-img-container {
     width: 100%;
+    height: 710px;
     position: relative;
     z-index: 1;
 }
 
 .banner-img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -506,6 +512,113 @@ footer {
     width: 37px;
     height: 37px;
     flex-shrink: 0;
+}
+
+/* Article Page CSS */
+
+.article-img-container {
+    width: 100%;
+    height: 650px;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-headline-content {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: 'Myriad Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 26rem;
+    margin-left: -17rem;
+    flex-direction: column;
+}
+
+.author-img-container {
+    width: 60px;
+}
+
+.author-img {
+    width: 100%;
+}
+
+.article-by-line-container {
+    justify-content: space-between;
+    margin: 1.5rem 18rem;
+}
+
+.author-name-and-date {
+    font-family: 'Myriad Pro', sans-serif;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.author-name {
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.share-container {
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+.share-icon {
+    width: 40px;
+}
+
+.a-share {
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: black;
+}
+
+.a-share:hover {
+    text-decoration: underline;
+}
+
+.article-content {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1rem;
+    margin: 3.5rem 18rem;
+}
+
+.article-content p {
+    margin-bottom: 12px;
+    text-indent: 2em;
+}
+
+.lead-paragraph {
+    font-weight: bold;
+}
+
+.flag-divider-article-page {
+    font-family: 'Myriad Pro', sans-serif;
+    font-stretch: condensed;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 13rem;
+    margin-top: -1px;
+    width: 10rem;
+    padding: 5px 15px;
+    font-size: 1.8em;
+    background-color: #1E1E1E;
+    color: yellow;
+}
+
+.others {
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 860px) {
