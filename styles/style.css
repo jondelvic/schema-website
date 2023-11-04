@@ -28,6 +28,11 @@
     src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +51,7 @@
     justify-content: space-evenly;
     padding-top: 0.65rem;
     padding-bottom: 0.65rem;
-    transition: background-color 400ms;
+    transition: background-color 450ms;
 }
 
 .primary-header.fixed {
@@ -73,6 +78,7 @@
 
 .nav-links-container {
     margin-right: 1.5rem;
+    transition: ;
 }
 
 a.nav-links {
@@ -88,13 +94,13 @@ a.nav-links {
 }
 
 .banner-img-container {
+    width: 100%;
     position: relative;
     z-index: 1;
 }
 
 .banner-img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
