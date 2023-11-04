@@ -28,6 +28,17 @@
     src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../assets/fonts/century_gothic-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    src: url(../assets/fonts/century_gothic_bold-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic_bold-webfont.woff) format('woff');
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding: 8rem;
