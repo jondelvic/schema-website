@@ -1,117 +1,47 @@
 @font-face {
-    font-family: "Century Gothic";
-    src: url('/assets/fonts/century_gothic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "Century Gothic";
-    src: url('/assets/fonts/gothici-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: "Century Gothic";
-    src: url('/assets/fonts/gothicb-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: "Century Gothic";
-    src: url('/assets/fonts/gothicbi-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    src: url('../assets/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Regular'), url('../MYRIADPRO-REGULAR.woff') format('woff');
+    font-weight: 400;
+    src: url('../assets/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-cond-webfont.woff') format('woff');
 }
-    
 
 @font-face {
     font-family: 'Myriad Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: condensed;
-    src: local('Myriad Pro Condensed'), url('/assets/fonts/MYRIADPRO-COND.woff') format('woff');
-}
-    
-
-@font-face {
-    font-family: 'Myriad Pro';
-    font-style: italic;
-    font-weight: normal;
-    font-stretch: condensed;
-    src: local('Myriad Pro Condensed Italic'), url('/assets/fonts/MYRIADPRO-CONDIT.woff') format('woff');
-}
-    
-
-@font-face {
-    font-family: 'Myriad Pro';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Myriad Pro Light'), url('/assets/fonts/MyriadPro-Light.woff') format('woff');
-}
-    
-
-@font-face {
-    font-family: 'Myriad Pro';
-    font-style: normal;
     font-weight: 600;
-    src: local('Myriad Pro Semibold'), url('/assets/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+    src: url('../assets/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-semibold-webfont.woff') format('woff');
 }
-    
 
 @font-face {
     font-family: 'Myriad Pro';
-    font-style: italic;
-    font-weight: 600;
-    src: local('Myriad Pro Semibold Italic'), url('/assets/fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+    font-weight: 700;
+    src: url('../assets/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-bold-webfont.woff') format('woff');
 }
-    
 
 @font-face {
     font-family: 'Myriad Pro';
-    font-style: normal;
-    font-weight: bold;
-    font-stretch: condensed;
-    src: local('Myriad Pro Bold Condensed'), url('/assets/fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+    font-weight: 700;
+    src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
 }
-    
 
 @font-face {
-    font-family: 'Myriad Pro';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Myriad Pro Bold'), url('/assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
+    font-family: 'Century Gothic';
+    src: url(../assets/fonts/century_gothic-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic-webfont.woff) format('woff');
 }
-    
 
 @font-face {
-    font-family: 'Myriad Pro';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Myriad Pro Bold Italic'), url('/assets/fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    src: url(../assets/fonts/century_gothic_bold-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic_bold-webfont.woff) format('woff');
 }
-    
 
-@font-face {
-    font-family: 'Myriad Pro';
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: condensed;
-    src: local('Myriad Pro Bold Condensed Italic'), url('/assets/fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
 }
 
 * {
@@ -119,28 +49,47 @@
     padding: 0;
 }
 
-body {
-    height: 3000px;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-nav {
-    z-index: 999;
+.primary-header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
     display: flex;
     height: 67px;
     width: 100%;
     font-family: "Century Gothic", sans-serif;
-    position: absolute;
-    position: fixed;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
     padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    transition: background-color 450ms;
+}
+
+.primary-header.fixed {
+    background-color: #1E1E1E;
 }
 
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .nav-bar {
@@ -152,10 +101,15 @@ nav {
 }
 
 a.nav-links {
-    text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 0.9em;
+    transition: 0.5s;
+}
+
+a.nav-links:hover {
+    color: yellow;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-img {
@@ -164,14 +118,15 @@ a.nav-links {
 }
 
 .banner-img-container {
+    width: 100%;
+    height: 710px;
     position: relative;
     z-index: 1;
 }
 
 .banner-img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -183,17 +138,15 @@ a.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 25rem;
-    margin-left: -15rem;
+    top: 23.5rem;
+    margin-left: -17rem;
     flex-direction: column;
 }
 
 .date-and-author-container {
-    font-family: "Myriad Pro", sans-serif;
-    font-stretch: condensed;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: -6.5rem;
-    font-size: 1.05rem;
+    margin-left: 1rem;
+    font-size: 1.15em;
 }
 
 .banner-hr {
@@ -205,10 +158,10 @@ a.nav-links {
 }
 
 .headline-container {
-    margin-left: 33.5rem;
+    margin-left: 35rem;
     margin-top: 0.5em;
     font-size: 3rem;
-    width: 850px;
+    width: 880px;
     font-weight: bold;
     font-style: italic;
     font-stretch: condensed;
@@ -223,7 +176,7 @@ a.headline {
 }
 
 a.headline:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .article-preview {
@@ -257,30 +210,37 @@ a.headline:hover {
 }
 
 .section-hr {
-    width: 60rem;
-    margin-left: 17rem;
+    width: 69rem;
+    margin-left: 13rem;
     margin-top: 45px;
     height: 5px;
-    background-color: black;
+    background-color: #1E1E1E;
 }
 
 .flag-divider {
-    font-family: "Myriad Pro", sans-serif;
-    font-weight: 500;
+    font-family: 'Myriad Pro', sans-serif;
+    font-stretch: condensed;
+    font-weight: 700;
     font-style: italic;
-    margin-left: 17rem;
+    margin-left: 13rem;
     margin-top: -1px;
-    width: 3.5rem;
+    width: 5.8rem;
     padding: 5px 15px;
-    font-size: 1em;
-    background-color: black;
+    font-size: 1.8em;
+    background-color: #1E1E1E;
     color: yellow;
 }
 
+#long-text-flag {
+    width: 6.5rem;
+}
+
 .card-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: -3rem;
     font-family: 'Century Gothic';
     gap: 20px;
 }
@@ -297,23 +257,401 @@ a.headline:hover {
 }
 
 .card-headline {
+    font-family: 'Myriad Pro', sans-serif;
+    color: black;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.7em;
     padding-top: 8px;
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-headline:hover {
+    text-shadow: 1px 1px 1px rgba(255, 255, 0, 0.50);
 }
 
 .card-by-line {
-    font-size: 0.75em;
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: italic;
+    font-size: 1em;
     padding-top: 8px;
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
 }
 
 .card-article-preview {
-    font-size: 1em;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 0.8em;
     padding-top: 10px;
-    padding-left: 1.2rem;
-    width: 325px;
+    padding-left: 0.5rem;
+    width: 320px;
+}
+
+.opinion-highlights-container {
+    margin-top: 2rem;
+}
+
+.opinion-highlights-flex {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+
+.opinion-img-container {
+    width: 350px;
+    height: 200px;
+    margin-right: 1rem;
+}
+
+.opinion-highlights-content {
+    width: 650px;
+}
+
+.opinion-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features-highlights {
+    padding-top: 40px;
+}
+
+.main-feature-img-container {
+    width: 68rem;
+    height: 300px;
+    transition: 0.25s;
+}
+
+.main-feature-img-container:hover {
+    filter: blur(2px);
+}
+
+.main-feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-feature-overlay {
+    position: absolute;
+    margin-top: -11rem;
+    padding-left: 15rem;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-feature-headline {
+    font-family: 'Myriad Pro', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1.5rem;
+    width: 1050px;
+    transition: 0.3s;
+}
+
+.main-feature-headline:hover {
+    opacity: 0.8;
+}
+
+.main-feature-by-line {
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    padding-top: 8px;
+}
+
+.main-feature-article-preview {
+    font-family: 'Century Gothic', sans-serif;
+    margin-top: 10px;
+    width: 1050px;
+}
+
+footer {
+    background-color: #373737;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-logo-container {
+    margin-top: 4rem;
+    padding: 5rem;
+}
+
+/* About Us CSS */
+
+.second-nav {
+    z-index: 999;
+    display: flex;
+    height: 67px;
+    width: 100%;
+    font-family: "Century Gothic", sans-serif;
+    position: absolute;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 0.65rem;
+    padding-bottom: 0.45rem;
+    background-color: #1E1E1E;
+    flex-shrink: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 390px 390px;
+    justify-content: center;
+    row-gap:13px;
+}
+
+.staff-headline{
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+}
+
+.grid-item-a{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform:uppercase;
+    color: #000;
+}
+
+.grid-item-b{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    color: #000;
+}
+
+.grp{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+    height: 19px;
+    flex-shrink: 0;
+}
+
+.copyright{
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.bottom-heading{
+    color:#000;
+    font-family:"Myriad Pro", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height:normal;
+    text-transform: uppercase;
+    padding-top: 0.50rem;
+    padding-bottom: 0.6rem;
+}
+
+.grid-container-b{
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2rem;
+}
+
+.grid-item-e {
+    text-align: center;
+}
+
+.bottom-text{
+    color: #000;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight:400;
+    line-height: 150%;
+}
+
+.mail-link {
+    transition: 0.3s;
+}
+
+.mail-link:hover {
+    text-decoration: underline;
+}
+
+.bottom-img{
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+.icons-container{
+    padding-top: .70rem;
+}
+
+#bottom-pictures{
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
+
+.icons{
+    padding-left: .60rem;
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
+.pin-container {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.location-pin {
+    width: 100%;
+}
+
+.contact-link {
+    margin-top: -6px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Article Page CSS */
+
+.article-img-container {
+    width: 100%;
+    height: 650px;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-headline-content {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: 'Myriad Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 26rem;
+    margin-left: -17rem;
+    flex-direction: column;
+}
+
+.author-img-container {
+    width: 60px;
+}
+
+.author-img {
+    width: 100%;
+}
+
+.article-by-line-container {
+    justify-content: space-between;
+    margin: 1.5rem 18rem;
+}
+
+.author-name-and-date {
+    font-family: 'Myriad Pro', sans-serif;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.author-name {
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.share-container {
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+.share-icon {
+    width: 40px;
+}
+
+.a-share {
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: black;
+}
+
+.a-share:hover {
+    text-decoration: underline;
+}
+
+.article-content {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1rem;
+    margin: 3.5rem 18rem;
+}
+
+.article-content p {
+    margin-bottom: 12px;
+    text-indent: 2em;
+}
+
+.lead-paragraph {
+    font-weight: bold;
+}
+
+.flag-divider-article-page {
+    font-family: 'Myriad Pro', sans-serif;
+    font-stretch: condensed;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 13rem;
+    margin-top: -1px;
+    width: 10rem;
+    padding: 5px 15px;
+    font-size: 1.8em;
+    background-color: #1E1E1E;
+    color: yellow;
+}
+
+.others {
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 860px) {
@@ -333,8 +671,8 @@ a.headline:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 22rem;
-        margin-left: -18rem;
+        top: 21rem;
+        margin-left: -20rem;
         flex-direction: column;
     }
 
@@ -342,29 +680,54 @@ a.headline:hover {
         font-family: "Myriad Pro", sans-serif;
         font-stretch: condensed;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: -7rem;
-        font-size: 1.05rem;
+        margin-left: 1rem;
+        font-size: 1.15rem;
     }
 
     .section-hr {
-        width: 60rem;
-        margin-left: 14rem;
+        width: 69rem;
+        margin-left: 8rem;
         margin-top: 45px;
         height: 5px;
-        background-color: black;
+        background-color: #1E1E1E;
     }
 
     .flag-divider {
         font-family: "Myriad Pro", sans-serif;
-        font-weight: 500;
+        font-weight: 700;
         font-style: italic;
-        width: 3.5rem;
+        width: 5.5rem;
+        font-family: 'Myriad Pro', sans-serif;
+        font-stretch: condensed;
+        font-weight: 700;
+        font-style: italic;
         padding: 5px 15px;
-        font-size: 1em;
-        margin-left: 14.05rem;
+        margin-left: 8.05rem;
         margin-top: -1px;
-        background-color: black;
+        background-color: #1E1E1E;
         color: yellow;
+    }
+    
+    .flag-divider-article-page {
+        font-family: 'Myriad Pro', sans-serif;
+        font-stretch: condensed;
+        font-weight: 700;
+        font-style: italic;
+        margin-left: 8.05rem;
+        margin-top: -1px;
+        width: 10rem;
+        padding: 5px 15px;
+        font-size: 1.8em;
+        background-color: #1E1E1E;
+        color: yellow;
+    }
+
+    .main-feature-overlay {
+        position: absolute;
+        margin-top: -12rem;
+        padding-left: 10rem;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -409,5 +772,6 @@ a.headline:hover {
         background-color: black;
         color: yellow;
     }
+
 }
 
