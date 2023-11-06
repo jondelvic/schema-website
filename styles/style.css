@@ -656,6 +656,14 @@ footer {
     color: yellow;
 }
 
+.section-hr-article-page {
+    width: 69rem;
+    margin-left: 13rem;
+    margin-top: 45px;
+    height: 5px;
+    background-color: #1E1E1E;
+}
+
 .others {
     margin-bottom: 2rem;
 }
