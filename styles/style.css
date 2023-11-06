@@ -324,7 +324,8 @@ a.headline:hover {
 }
 
 .main-feature-img-container:hover {
-    filter: blur(2px);
+    border: 0;
+    filter: blur(1.25px);
 }
 
 .main-feature-img {
@@ -366,6 +367,10 @@ a.headline:hover {
     font-family: 'Century Gothic', sans-serif;
     margin-top: 10px;
     width: 1050px;
+}
+
+.sports-highlights {
+    margin-bottom: 3.25rem;
 }
 
 footer {
@@ -420,7 +425,7 @@ footer {
     color: #000;
 }
 
-.grid-item-a{
+.grid-item-a {
     font-family: "Century Gothic", sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -440,7 +445,7 @@ footer {
     color: #000;
 }
 
-.grp{
+.grp {
     font-family: "Century Gothic", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -625,6 +630,7 @@ footer {
     font-family: 'Century Gothic', sans-serif;
     font-size: 1rem;
     margin: 3.5rem 18rem;
+    text-align: justify;
 }
 
 .article-content p {
@@ -732,6 +738,10 @@ footer {
 }
 
 @media (min-width: 1920px) {
+    .banner-img-container {
+        height: 1000px;
+    }
+
     .banner-headline-content {
         position: absolute;
         z-index: 2;
@@ -749,7 +759,7 @@ footer {
         font-family: "Myriad Pro", sans-serif;
         font-stretch: condensed;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 2rem;
+        margin-left: -0.75rem;
         font-size: 1.05rem;
     }
 
@@ -763,7 +773,7 @@ footer {
 
     .flag-divider {
         font-family: "Myriad Pro", sans-serif;
-        font-weight: 500;
+        font-weight: 700;
         font-style: italic;
         font-size: 1.5em;
         width: 110px;
@@ -771,6 +781,22 @@ footer {
         margin-top: -1px;
         background-color: black;
         color: yellow;
+    }
+
+    .main-feature-overlay {
+        margin-left: 12rem;
+    }
+
+    .section-hr-article-page {
+        width: 80rem;
+        margin-left: 20rem;
+        margin-top: 45px;
+        height: 5px;
+        background-color: #1E1E1E;
+    }
+    
+    .flag-divider-article-page {
+        margin-left: 20.032rem;
     }
 
 }
