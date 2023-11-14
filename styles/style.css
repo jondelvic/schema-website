@@ -1,42 +1,42 @@
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 400;
-    src: url('../assets/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-regular-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 400;
-    src: url('../assets/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-cond-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-cond-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 600;
-    src: url('../assets/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-semibold-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-semibold-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 700;
-    src: url('../assets/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-bold-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-bold-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 700;
-    src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-boldcond-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Century Gothic';
-    src: url(../assets/fonts/century_gothic-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic-webfont.woff) format('woff');
+    src: url('../others/fonts/century_gothic-webfont.woff2') format('woff2'), url('../others/fonts/century_gothic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Century Gothic';
     font-weight: 700;
-    src: url(../assets/fonts/century_gothic_bold-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic_bold-webfont.woff) format('woff');
+    src: url('../others/fonts/century_gothic_bold-webfont.woff2') format('woff2'), url('../others/fonts/century_gothic_bold-webfont.woff') format('woff');
 }
 
 html {
