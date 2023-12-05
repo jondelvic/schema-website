@@ -386,6 +386,23 @@ footer {
     padding: 5rem;
 }
 
+.to-top {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
+    background: black;
+    border-radius: 10px;
+}
+
+a.to-top {
+    color: white;
+}
+
 /* About Us CSS */
 
 .second-nav {
