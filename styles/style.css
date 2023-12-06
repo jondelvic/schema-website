@@ -387,20 +387,38 @@ footer {
 }
 
 .to-top {
+    background: black;
+    height: 40px;
+    width: 40px;
     position: fixed;
     z-index: 3;
     bottom: 0;
     right: 0;
-    height: 40px;
-    width: 40px;
     margin-bottom: 0.8rem;
-    margin-right: 0.8rem;
-    background: black;
-    border-radius: 10px;
+    margin-right: 0.8rem;    border-radius: 18px;
+    animation: fade-up linear;
+    animation-timeline: scroll();
 }
 
-a.to-top {
-    color: white;
+#top-arrow-button {
+    transition: 0.25s;
+    fill: yellow;
+    border-radius: 12px;
+}
+
+#top-arrow-button:hover {
+    background-color: yellow;
+    fill: black;
+    border-radius: 12px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+    }
+    3.5% {
+        opacity: 1;
+    }
 }
 
 /* About Us CSS */
