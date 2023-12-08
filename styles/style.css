@@ -1,42 +1,42 @@
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 400;
-    src: url('../assets/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-regular-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-regular-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 400;
-    src: url('../assets/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-cond-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-cond-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-cond-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 600;
-    src: url('../assets/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-semibold-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-semibold-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-semibold-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 700;
-    src: url('../assets/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-bold-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-bold-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-bold-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Myriad Pro';
     font-weight: 700;
-    src: url('../assets/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../assets/fonts/myriadpro-boldcond-webfont.woff') format('woff');
+    src: url('../others/fonts/myriadpro-boldcond-webfont.woff2') format('woff2'), url('../others/fonts/myriadpro-boldcond-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Century Gothic';
-    src: url(../assets/fonts/century_gothic-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic-webfont.woff) format('woff');
+    src: url('../others/fonts/century_gothic-webfont.woff2') format('woff2'), url('../others/fonts/century_gothic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Century Gothic';
     font-weight: 700;
-    src: url(../assets/fonts/century_gothic_bold-webfont.woff2) format('woff2'), url(../assets/fonts/century_gothic_bold-webfont.woff) format('woff');
+    src: url('../others/fonts/century_gothic_bold-webfont.woff2') format('woff2'), url('../others/fonts/century_gothic_bold-webfont.woff') format('woff');
 }
 
 html {
@@ -386,6 +386,41 @@ footer {
     padding: 5rem;
 }
 
+.to-top {
+    background: black;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;    border-radius: 14px;
+    animation: fade-up linear;
+    animation-timeline: scroll();
+}
+
+#top-arrow-button {
+    transition: 0.25s;
+    fill: yellow;
+    border-radius: 12px;
+}
+
+#top-arrow-button:hover {
+    background-color: yellow;
+    fill: black;
+    border-radius: 12px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+    }
+    3.5% {
+        opacity: 1;
+    }
+}
+
 /* About Us CSS */
 
 .second-nav {
@@ -467,7 +502,7 @@ footer {
 }
 
 .bottom{
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
@@ -552,6 +587,41 @@ footer {
     text-decoration: underline;
 }
 
+.web-team {
+    grid-template-columns: 320px 320px 320px;
+    height: 550px;
+}
+
+.two {
+    padding-left: 10rem;
+    grid-template-columns: 320px 320px;
+}
+
+.member-img-container {
+    width: 300px;
+}
+
+.member-img {
+    width: 100%;
+    height: 100%;
+}
+
+.web-name {
+    font-family: 'Myriad Pro';
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-stretch: condensed;
+}
+
+.web-role {
+    font-size: 0.85rem;
+}
+
+.web-description {
+    width: 300px;
+    margin-top: 6px;
+    font-size: 0.75rem;
+}
 /* Article Page CSS */
 
 .article-img-container {
