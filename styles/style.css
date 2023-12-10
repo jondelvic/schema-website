@@ -138,7 +138,7 @@ a.nav-links:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 23.5rem;
+    top: 22rem;
     margin-left: -17rem;
     flex-direction: column;
 }
@@ -188,6 +188,82 @@ a.headline:hover {
     font-family: "Century Gothic";
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+.read-more-btn-container {
+    margin-top: 1.6rem;
+    margin-left: 6.5rem;
+}
+
+.read-more-btn {
+    margin-top: 1rem;
+    margin-left: -13rem;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 1.2em;
+    padding: 9px 24px;
+    border: 0;
+    background-color: yellow;
+    color: black;
+    transition: 0.25s;
+}
+
+.read-more-btn:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.read-more-btn-news-container {
+    margin-top: 1rem;
+    margin-left: 6px;
+}
+
+.read-more-btn-news {
+    font-family: 'Century Gothic';
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.read-more-btn-news:hover {
+    box-shadow: 1px 1px 3px black;
+}
+
+.read-more-btn-opinion-container {
+    margin-top: 0.8rem;
+    margin-left: 7px;
+}
+
+.read-more-btn-opinion {
+    font-family: 'Century Gothic';
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.read-more-btn-opinion:hover {
+    box-shadow: 1px 1px 3px black;
+}
+
+.read-more-btn-features-container {
+    margin-top: 1rem;
+    margin-left: 6px;
+    margin-bottom: -1rem;
+}
+
+.read-more-btn-features {
+    font-family: 'Century Gothic';
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    transition: 0.3s;
+}
+
+.read-more-btn-features:hover {
+    box-shadow: 1px 1px 3px black;
 }
 
 .news-hightlights {
@@ -248,6 +324,7 @@ a.headline:hover {
 .card {
     width: 350px;
     height: 425px;
+    margin-bottom: 2rem;
 }
 
 .card-img {
