@@ -815,6 +815,10 @@ footer {
     margin-bottom: 2rem;
 }
 
+.extra-read-more:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 860px) {
 
     .nav-bar {
